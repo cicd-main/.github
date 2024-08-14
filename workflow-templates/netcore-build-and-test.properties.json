@@ -1,0 +1,9 @@
+{
+    "name": "3Shape .NET core Build and Test",
+    "description": "Build and test .NET Core application with C#",
+    "iconName": "octicon quote",
+    "categories": [
+        "continuous-integration",
+        "testing"
+    ]
+}
