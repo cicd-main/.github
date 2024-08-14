@@ -1,0 +1,14 @@
+{
+    "name": "C# build and test",
+    "description": "Build and test .NET Core application with C#",
+    "iconName": "octicon quote",
+    "categories": [
+        "Continuous integration",
+        "C#"
+    ],
+    "filePatterns": [
+        "package.json$",
+        "^Dockerfile",
+        ".*\\.md$"
+    ]
+}
