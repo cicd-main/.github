@@ -1,4 +1,4 @@
-name: Build and Test
+name: Publish
 
 on:
   push:
@@ -40,6 +40,17 @@ jobs:
       collectTelemetry: "${{ inputs.collectTelemetry || false }}"
       verbosity: "${{ inputs.verbosity || 'minimal' }}"
       runnerLabel: "${{ inputs.runnerLabel || '3shape-windows-latest' }}"
+      applications: |
+        [
+          {
+            "projectName": "Your project name here...",
+            "publishProfile": "publish profile name here..."
+          },
+          {
+            "projectName": "Your project name here...",
+            "publishProfile": "publish profile name here..."
+          }
+        ]
     permissions:
       checks: write
       contents: read

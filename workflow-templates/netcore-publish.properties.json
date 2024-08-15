@@ -1,0 +1,9 @@
+{
+    "name": "3Shape .NET core Publish",
+    "description": "Build, test and publish .NET Core application with C#",
+    "iconName": "icon",
+    "categories": [
+        "continuous-integration",
+        "testing"
+    ]
+}
