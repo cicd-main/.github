@@ -34,7 +34,7 @@ on:
 
 jobs:
   build:
-    uses: 3ShapeInternal/ThreeShape.CICD.Workflows/.github/workflows/build-dotnet-package.yml@master
+    uses: 3ShapeInternal/ThreeShape.CICD.Workflows/.github/workflows/build-dotnet-package-v2.yml@master
     secrets: inherit
     with:
       collectTelemetry: "${{ inputs.collectTelemetry || false }}"
@@ -44,11 +44,11 @@ jobs:
         [
           {
             "projectName": "Your project name here...",
-            "publishProfile": "publish profile name here..."
+            "publishProfile": "publish profile name here...(eg. PublishProfile.linux-x64.pubxml)"
           },
           {
             "projectName": "Your project name here...",
-            "publishProfile": "publish profile name here..."
+            "publishProfile": "publish profile name here...(eg. PublishProfile.win-x64.pubxml)"
           }
         ]
     permissions:

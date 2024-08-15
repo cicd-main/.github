@@ -34,7 +34,7 @@ on:
 
 jobs:
   build:
-    uses: 3ShapeInternal/ThreeShape.CICD.Workflows/.github/workflows/build-dotnet-package.yml@master
+    uses: 3ShapeInternal/ThreeShape.CICD.Workflows/.github/workflows/build-dotnet-package-v2.yml@master
     secrets: inherit
     with:
       collectTelemetry: "${{ inputs.collectTelemetry || false }}"

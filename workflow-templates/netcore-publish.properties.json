@@ -1,9 +1,9 @@
 {
     "name": "3Shape .NET core Publish",
-    "description": "Build, test and publish .NET Core application with C#",
+    "description": "Build, test and publish packages to the Artifactory  for .NET Core application",
     "iconName": "icon",
     "categories": [
         "continuous-integration",
-        "testing"
+        "C#"
     ]
 }
