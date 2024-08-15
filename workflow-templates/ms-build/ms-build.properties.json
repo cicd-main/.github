@@ -1,0 +1,11 @@
+{
+    "name": "3Shape MS Build and Test",
+    "description": "",
+    "iconName": "icon",
+    "creator": "3Shape CICD",
+    "categories": [
+        "continuous-integration",
+        "C#",
+        "C++"
+    ]
+}

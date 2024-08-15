@@ -1,5 +1,5 @@
 {
-    "name": "3Shape .NET core Build and Test",
+    "name": "3Shape .NET Build and Test",
     "description": "Build and test .NET Core application with C#",
     "iconName": "icon",
     "creator": "3Shape CICD",

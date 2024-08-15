@@ -1,0 +1,46 @@
+name: Build Project
+
+on:
+  push:
+    branches:
+      - master
+      - hotfix/*
+      - bugfix/*
+      - misc/*
+      - features/*
+      - releases/*
+      - breaking/*
+      - dependabot/*/*
+
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      verbosity:
+        description: "Sets the verbosity of the dotnet process"
+        default: 'minimal'
+        type: choice
+        options:
+          - quiet
+          - minimal
+          - normal
+          - detailed
+          - diagnostic
+      runnerLabel:
+        description: "Specify runner label to use from https://github.com/3ShapeInternal/ThreeShape.CICD.Actions.Runners/blob/master/README.md"
+        default: "sid-processing-cuda-ua-shr-pro1"
+        type: string
+
+jobs:
+  build:
+    uses: 3ShapeInternal/ThreeShape.CICD.Workflows/.github/workflows/msbuild-build-project.yml@master
+    secrets: inherit
+    with:
+      verbosity: "${{ inputs.verbosity || 'minimal' }}"
+      runnerLabel: "${{ inputs.runnerLabel || 'sid-processing-cuda-ua-shr-pro1' }}"
+      solutionName: "ThreeShape.Geometry3D.Operations.CollisionDetection"
+      nugetPackArgs: "-p:CIBuild=true"
+    permissions:
+      checks: write
+      contents: read
+      actions: read

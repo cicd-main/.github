@@ -1,5 +1,5 @@
 {
-    "name": "3Shape .NET core Publish",
+    "name": "3Shape .NET Publish",
     "description": "Build, test and publish packages to the Artifactory  for .NET Core application",
     "iconName": "icon",
     "creator": "3Shape CICD",
