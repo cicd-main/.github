@@ -5,7 +5,6 @@
     "creator": "3Shape CICD",
     "categories": [
         "continuous-integration",
-        "C#",
         "C++"
     ]
 }
